@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+	<!-- 指明满足"/work/*"的页面，将被"/WEB-INF/views/layouts/default.jsp"所装饰 -->
+<!-- 	<mapping path="/views/*" decorator="/WEB-INF/layouts/adminframe.jsp" /> -->
+	
+	
+	<mapping path="/wappage/*" decorator="/WEB-INF/layouts/wapframe.jsp" />
+	<mapping path="*/machinesListPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/workshopPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/productionLinePageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/personListPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/index" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/repairManualPage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/taskTypePage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/plDutyPage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/mechanicPage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/errorPropPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/uploadPage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/show" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/aoiSpiLinePage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/plKanBanPage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/macKanBanPage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/faultTypePage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/aoispiThresholdPage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/technologicalProcessPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/oplPage" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/homepageShowPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/organizationChartPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/lineFunctionPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/maintenanceChecklistPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/itemMgr" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/cphConfigMgr" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/itemCategoryMgr" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/auditMgr" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/audit5SItemAreaMgr" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/audit5SItemLocationMgr" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/customerAuditPlanPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/roleListPageWeb" decorator="/WEB-INF/layouts/default.jsp" />
+	<mapping path="*/error" decorator="/WEB-INF/layouts/default.jsp" />
+	<!-- 不被渲染的路径. -->  
+	<mapping path="*/loadSmartFactoryDataReport" exclue="true"/>  
+	
+	<content-processor>
+		<tag-rule-bundle
+			class="com.sim.andon.web.core.sitemesh.FooterTagRuleBundle" />
+	</content-processor>
+</sitemesh>

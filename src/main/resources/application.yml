@@ -1,0 +1,36 @@
+spring:
+  application: null
+  name: Logistics
+#  view:
+#    prefix: /WEB-INF/views/
+#    suffix: .jsp
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+server:
+  sessionTimeout: 1800
+  contextPath: /andon
+  port: 8080
+multipart:
+  maxFileSize: 10000Mb
+  maxRequestSize: 200000Mb
+#logging:
+#  path: logs
+#  file: logs/andon.log
+#  level: ERROR
+export:
+  fileSaveDir: /WEB-INF/file_html/
+  templatePath: /WEB-INF/export/template/
+  exportAllNumber: 5000
+pictrue:
+  uploadPath: null
+  maxWidth: 320 
+  maxHeight: 200
+  prevfix: thumb_
+upload:
+  uploadFileDiskPath: D:/upload/andon/file/
+  uploadFileAccessPath: https://192.168.1.9/img/
+  #uploadFileDiskPath: D:/upload/andon/file/
+  #uploadFileAccessPath: http://localhost:8081/img/
